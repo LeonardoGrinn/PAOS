@@ -1,0 +1,31 @@
+/* ==================================
+//////////// Family-fonts ///////////
+================================== */
+/* ---- Liberation Regular ---- */
+@font-face {
+  font-family: "Liberation";
+  src: url('../fonts/LiberationMono-Regular.ttf') format('opentype');
+}
+
+/* ---- Roboto Regular ---- */
+@font-face {
+  font-family: "Roboto";
+  src: url('../fonts/Roboto-Regular.ttf') format('opentype');
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  /* font-size: 16px; */
+  line-height: 1.7;
+  color: $color-primary;
+}
+
+.heading-primary {
+  font-family: "Liberation";
+}
+
+.heading-secondary {
+
+}
+
