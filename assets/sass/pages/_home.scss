@@ -1,4 +1,47 @@
+.home {
+    overflow-y: hidden;
+    &__logo {
+        -ms-display: flex;
+        display: flex;
+         /* alineacion vertical */
+         align-items: center;
+         /* alineacion horizontal */
+        justify-content: center;
+        height: 100vh;
 
+        img {
+            width: 35%;
+
+            /* Ipad */
+            @include respond(ipad) {
+                width: 60%;
+                transform: translateY(-5rem)
+            }
+        }
+    }
+
+    &__contact-btn {
+        position: absolute;
+        bottom: 4rem;
+        left: 6rem;
+        z-index: 2005;
+
+        img {
+           width: 6.5rem;
+           height: 6.5rem; 
+        }
+
+        // iPhone Plus
+        @include respond(iphone-plus) {
+            left: 4rem;
+            bottom: 2rem;
+            img {
+                width: 5rem;
+                height: 5rem;  
+            }
+        }
+    }
+}
 
 
 
