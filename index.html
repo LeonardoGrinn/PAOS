@@ -11,11 +11,11 @@
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="shortcut icon" type="image/png" href="assets/img/favicon.png">
 
-  <title>Starter</title>
+  <title>PAOS | Galería de Arte</title>
 </head>
 
 <body class="home">
-  <!-- ====================== NAVIGATION ====================== -->
+  <!-- ====================== N A V I G A T I O N ====================== -->
   <div class="navigation">
     <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
 
@@ -27,22 +27,131 @@
 
     <nav class="navigation__nav">
       <ul class="navigation__list">
-          <li class="navigation__item"><a href="#" class="navigation__link navigation__link__one">Info</a></li>
-          <li class="navigation__item"><a href="#" class="navigation__link navigation__link__two">Residencias</a></li>
-          <li class="navigation__item"><a href="#" class="navigation__link navigation__link__three">Programa Educativo</a></li>
-          <li class="navigation__item"><a href="#" class="navigation__link navigation__link__four">Amigues</a></li>
-          <li class="navigation__item"><a href="#" class="navigation__link navigation__link__five">Patronato</a></li>
-          <li class="navigation__item"><a href="#" class="navigation__link navigation__link__six">Canal</a></li>
+          <li class="navigation__item"><a href="#/info" class="navigation__link navigation__link__one">Info</a></li>
+          <li class="navigation__item"><a href="#/residencias" class="navigation__link navigation__link__two">Residencias</a></li>
+          <li class="navigation__item"><a href="#/programa-educativo" class="navigation__link navigation__link__three">Programa Educativo</a></li>
+          <li class="navigation__item"><a href="#/amigues" class="navigation__link navigation__link__four">Amigues</a></li>
+          <li class="navigation__item"><a href="#patronato" class="navigation__link navigation__link__five">Patronato</a></li>
+          <li class="navigation__item"><a href="#canal" class="navigation__link navigation__link__six">Canal</a></li>
       </ul>
     </nav>
   </div> 
 
- <!-- ====================== MAIN SITE CONTENT ====================== -->
+ <!-- ====================== M A I N  S I T E  C O N T E N T ====================== -->
   <main> <!-- tells search engines this is the main part of the site. -->
-    <div class="home__logo"><img src="assets/img/welcome.svg" alt="paos-logo"></div>
-
-    <a class="home__contact-btn" href="#"><img src="assets/img/ui-elements/contact-btn.png" alt="contact-btn"></a>
+      <div class="home__logo"><img src="assets/img/welcome.svg" alt="paos-logo"></div>
+  
+      <a id="myBtn" class="home__contact-btn" href="#"><img src="assets/img/ui-elements/contact-btn.png" alt="contact-btn"></a>
   </main>
+
+
+  <!-- ====================== C O N T A C T  M O D A L ====================== -->
+  <!-- The Modal -->
+  <div class="modal myModal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <!-- firt row -->
+      <div>
+        <span class="close">&times;</span>
+      </div>
+
+      <!-- second row -->
+      <div>
+        <h1 class="contact-title">RECIBE NUESTRO NEWSLETTER</h1>
+        <div class="form">
+            <form id="form__contact" class="form-horizontal" method="post" class="form-horizontal" action="ajaxSubmit.php">
+                <div class="form__group">
+                    <input type="email" class="form-control" placeholder=" correo electrónico" name="email" required>
+                </div>
+
+                <div class="form__group form__send">
+                  <button type="submit" name="submit" class="btn-newsletter">SUSCRIBETE</button>
+                </div>
+                
+            </form>
+          </div><!-- form -->
+
+          <!-- info -->
+          <div class="info-contact">
+            <div class="right-info">
+              <h2>DIRECCIÓN</h2>
+              <P>Lorena Peña Brito<br>
+                <small><a href="mailto:direccion@paosgdl.com">direccion@paosgdl.com</a></small>
+              </P>
+            </div> <!-- .end -->
+            <div class="left-info adress-info">
+              <p>Aurelio Aceves #27<br>
+              Arcos Vallarta<br>
+              Guadalajara, Jalisco<br>
+              México</p>
+            </div><!-- .end -->
+            <div class="right-info">
+              <h2>ADMINISTRACIÓN</h2>
+              <P>Nancy Apellido<br>
+                <small><a href="mailto:paos.admin@paosgdl.com">paos.admin@paosgdl.com</a></small>
+              </P>
+            </div> <!-- .end -->
+            <div class="left-info tel-info">
+                <p><a href="tel:+5213336162398">+52 (33) 3616 2398</a></p>
+              </div><!-- .end -->
+            <div class="right-info">
+              <h2>PATRONATO</h2>
+              <P>Daniela Mercado<br>
+                <small><a href="mailto:paos.patronato@paosgdl.com">paos.patronato@paosgdl.com</a></small>
+              </P>
+            </div> <!-- .end -->
+            <div class="left-info open-info">
+                <p>MARTES A DOMINGO<br>
+                10:00 - 14:00<br>
+                16:00 - 20:00</p>
+              </div><!-- .end -->
+            <div class="right-info">
+              <h2>COMUNICACIÓN<br>Y REDES</h2>
+              <P>Larissa Garza<br>
+                <small><a href="mailto:paos.comunicacion@paosgdl.com">paos.comunicacion@paosgdl.com</a></small>
+              </P>
+            </div> <!-- .end -->
+            <div class="left-info social-info">
+                <p> <a href="#">↳FACEBOOK</a> <br>
+                <a href="#">↳TWITTER</a> <br>
+                <a href="#">↳INSTAGRAM</a> </p>
+              </div><!-- .end -->
+            <div class="right-info service-info">
+              <h2>SERVICIO SOCIAL</h2>
+              <P><small>Fulanito Tal<br>
+                 Otro Fulano <br>
+                 Perengano Apellido
+                </small></P>
+            </div> <!-- .end -->
+            <div class="empty-info"></div> <!-- empty -->
+            <div class="right-info">
+              <h2>PRODUCCIÓN</h2>
+              <P>Gretel Morales<br>
+                <small><a href="mailto:produccion.paos@paosgdl.com">produccion.paos@paosgdl.com</a></small>
+              </P>
+            </div> <!-- .end -->
+            <div class="empty-info"></div> <!-- empty -->
+            <div class="right-info">
+              <h2>CONTABILIDAD</h2>
+              <P>Aqui Nombre<br>
+                <small><a href="mailto:correo@paosgdl.com">correo@paosgdl.com</a></small>
+              </P>
+            </div> <!-- .end -->
+            <div></div>       
+          </div>
+      </div> 
+
+      <!-- third row -->
+      <div>
+  
+      </div>
+    </div>
+
+  </div>
+
+
+  <!-- JS -->
+  <script type="text/javascript" src="assets/js/main.js"></script>
 </body>
-<!--<script type="text/javascript" src="assets/js/gallery.js"></script>-->
 </html>

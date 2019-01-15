@@ -1,0 +1,249 @@
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 2011; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow-y: auto !important; /* Enable scroll if needed */
+    -webkit-animation-name: fadeIn; /* Fade in the background */
+    -webkit-animation-duration: 0.3s;
+    animation-name: fadeIn;
+    animation-duration: 0.3s;
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    display: grid;
+    grid-template-columns: 1.5fr 2fr 1.5fr;
+    color:  $color-white;
+    bottom: 0;
+    background-color: $color-primary;
+    width: 100%;
+    -webkit-animation-name: slideIn;
+    -webkit-animation-duration: 0.3s;
+    animation-name: slideIn;
+    animation-duration: 0.3s;
+
+    /* ipad */
+    @include respond(ipad) {
+      grid-template-columns: 0.5fr 2.5fr 0.5fr;
+    }
+
+    /* iphone-plue */
+    @include respond(iphone-plus) {
+      grid-template-columns: 0fr 1fr 0fr;
+    }
+  }
+  
+  /* The Close Button */
+  .close {
+    color: $color-white;
+    float: left;
+    border: 1px solid $color-white;
+    border-radius: 100%;
+    margin: 2rem 0 0 1rem;
+    padding: 0 17px 0 17px;
+    font-size: 30px;
+    
+  }
+
+  #form__contact{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin-bottom: 3rem;
+
+    /* iphone-plus */
+    @include respond(iphone-plus) {
+      margin-right: 4rem;
+      grid-template-columns: 3fr 1fr;
+    }
+  }
+
+  .form-control {
+    width: 100%;
+    background-color: $color-primary;
+    height: 4rem;
+    color: $color-white;
+    font-size: 2rem;
+
+    &::placeholder {
+      color: $color-white;
+      font-size: 2rem;
+    }
+
+    /* iphone-plus */
+    @include respond(iphone-plus) {
+      height: 3rem;
+    }
+  }
+
+  .btn-newsletter {
+    background-color: $color-white;
+    color: $color-primary-light;
+    padding: 0 1rem 0 1rem;
+    height: 4rem;
+    border-radius: 1px;
+    font-size: 2rem;
+    width: 100%;
+
+    &:hover {
+      color: $color-primary;
+    }
+
+    /* iphone-plus */
+    @include respond(iphone-plus) {
+      font-size: 1rem;
+      height: 3rem;
+    }
+  }
+
+  .info-contact {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(7, 0.8fr);
+
+    /* ipad */
+    @include respond(iphone-plus) {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  .contact-title {
+    text-align: center;
+    font-size: 2.7vw;
+    margin-top: 8rem;
+
+    /* ipad */
+    @include respond(ipad) {
+      font-size: 4.3vw;
+    }
+
+    /* iphone-plus */
+    @include respond(iphone-plus) {
+      font-size: 4.5vw;
+      margin-right: 4rem;
+      margin-bottom: 0.5rem;
+    }
+
+    /* iphone-plus */
+    @include respond(iphone) {
+      font-size: 4.35vw;
+    }
+  }
+  
+  .right-info {
+    color: $color-white;
+    text-align: right;
+    line-height: 2.5rem;
+    margin-right: 5rem;
+
+    /* iphone-plus */
+    @include respond(iphone-plus) {
+      text-align: left;
+      margin-right: 0rem;
+    }
+
+    h2 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+      line-height: 4rem;
+
+      /* ipad */
+      @include respond(ipad) {
+        font-size: 2.5rem;
+      }
+
+      /* iphone-plus */
+      @include respond(iphone-plus) {
+        font-size: 2rem;
+        margin-bottom: 0rem;
+        line-height: 3rem;
+      }
+    }
+
+    p {
+      font-size: 2rem;
+
+      /* ipad */
+      @include respond(ipad) {
+        font-size: 1.8rem;
+      }      
+    }
+    a {
+      color: $color-white;
+    }
+  } 
+
+  .service-info {
+    margin-top:2rem; 
+    margin-bottom:2rem;
+  }
+
+  .left-info {
+    margin-left: 5rem;
+
+    /* iphone-plus */
+    @include respond(iphone-plus) {
+      margin-left: 0rem;
+    }
+    p {
+      font-size: 2.5rem;
+      line-height: 3.3rem;
+
+      /* ipad */
+      @include respond(ipad) {
+        font-size: 2rem;
+        line-height: 2.5rem;
+      } 
+    }
+
+    a {
+      color: $color-white;
+      border-bottom: 1px solid $color-white;
+      text-decoration: none;
+    }
+  }
+
+  .tel-info {
+    margin-top: 2rem;
+
+    /* iphone-plus */
+    @include respond(iphone-plus) {
+      grid-row-end: 11;
+      
+    }
+  } 
+
+  .social-info { 
+    /* iphone-plus */
+    @include respond(iphone-plus) {
+      margin-top: 2rem;
+      grid-row-end: 13;
+      margin-bottom: 5rem;
+    }
+  }
+
+  .open-info {
+    /* iphone-plus */
+    @include respond(iphone-plus) {
+      grid-row-end: 12;
+      margin-top: 2rem;
+    }
+  }
+
+  .empty-info {
+    /* iphone-plus */
+    @include respond(iphone-plus) {
+      display: none;
+    }
+  }
+
+  .adress-info {
+    /* iphone-plus */
+    @include respond(iphone-plus) {
+      grid-row-end: 10;
+    }
+  }

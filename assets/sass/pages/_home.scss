@@ -1,5 +1,5 @@
 .home {
-    overflow-y: hidden;
+    overflow-y: hidden; 
     &__logo {
         -ms-display: flex;
         display: flex;
@@ -22,7 +22,7 @@
 
     &__contact-btn {
         position: absolute;
-        bottom: 4rem;
+        bottom: 2vh;
         left: 6rem;
         z-index: 2005;
 
