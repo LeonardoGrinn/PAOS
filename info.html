@@ -43,7 +43,72 @@
         </div> <!-- ./Header --> 
 
         <div class="information__image"> <!-- Image container -->
-            <img src="assets/img/info/proyecto-1.png" alt="">
+            <div class="gallery__visor"> <!-- Principal image displayer -->
+
+                <!-- Expand btn 
+                <img src="assets/img/ui-gallery/expand.svg" alt="expand button" class="ui-icons expand">
+                -->
+                <!-- Preview btn -->
+                <img src="assets/img/ui-gallery/back.svg" data-direction="left" alt="left-controller" class="ui-icons arrows arrow__preview">
+        
+                <!-- Image Displayer -->
+                <img class="visor__img transition-fadeIn" src="assets/img/info/proyecto-1.png" alt="zorro-1">
+        
+                <!-- Next btn -->
+                <img src="assets/img/ui-gallery/next.svg" data-direction="right" alt="right-controller" class="ui-icons arrows arrow__next">
+        
+            </div> <!-- ./ Principal image displayer -->
+            <div style="display: none;" class="gallery__thumbnail"> <!-- Gallery Thumbnails -->
+                <div class="gallery__item"> <!-- item 1-->
+                    <img class="active" src="assets/img/info/proyecto-1.png" alt="zorro-1" data-index="0">
+                </div>
+        
+                <div class="gallery__item"><!-- item 2 -->
+                    <img src="assets/img/info/proyecto-1.png" alt="zorro-2" data-index="1">
+                </div>
+        
+                <div class="gallery__item"> <!-- item 3 -->
+                    <img src="assets/img/info/proyecto-1.png" alt="zorro-3" data-index="2">
+                </div>
+        
+                <div class="gallery__item"> <!-- item 4 -->
+                    <img src="assets/img/info/proyecto-1.png" alt="zorro-4" data-index="3">
+                </div>
+        
+                <div class="gallery__item"> <!-- item 5 -->
+                    <img src="assets/img/info/proyecto-1.png" alt="zorro-5" data-index="4">
+                </div>
+        
+                <div class="gallery__item"> <!-- item 6 -->
+                    <img src="assets/img/info/proyecto-1.png" alt="zorro-6" data-index="5">
+                </div>
+        
+                <div class="gallery__item"> <!-- item 7 -->
+                    <img src="assets/img/info/proyecto-1.png" alt="zorro-7" data-index="6">
+                </div>
+                
+                <div class="gallery__item"> <!-- item 8 -->
+                    <img src="assets/img/info/proyecto-1.png" alt="zorro-8" data-index="7">
+                </div>
+            </div> <!-- ./Gallery Thumbnails -->
+        
+            
+            <div class="full__view transition-fadeIn"> <!-- Full View Gallery -->
+                <div class="full__container"> <!-- Full view displayer -->
+        
+                    <!-- Close btn -->
+                    <a href="#"><span class="close-gallery">&times;</span></a>
+        
+                    <!-- Preview btn -->
+                    <img src="assets/img/ui-gallery/back.svg" data-direction="left" alt="left-controller" class="arrows arrow__preview">
+        
+                    <!-- Image Displayer -->
+                    <img class="visor__img transition-fadeIn" src="assets/img/info/proyecto-1.png" alt="zorro-1">
+        
+                    <!-- Next btn -->
+                    <img src="assets/img/ui-gallery/next.svg" data-direction="right" alt="right-controller" class="arrows arrow__next">
+                </div> <!-- ./ Full view displayer -->
+            </div> <!-- ./ Full View Gallery -->
         </div> <!-- ./Image container -->
 
         <div class="information__details"> <!-- information__details -->
@@ -129,7 +194,7 @@
         </div> <!-- information__project -->
   </main> 
 
-  <!-- JS 
-  <script type="text/javascript" src="assets/js/main.js"></script> -->
+  <!-- JS -->
+  <script type="text/javascript" src="assets/js/gallery.js"></script> 
 </body>
 </html>

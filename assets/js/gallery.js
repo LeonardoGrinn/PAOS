@@ -11,10 +11,10 @@ let arrowController = (e) => {
     galleryImg[imageIndex].classList.toggle('active');
     /**/
     /* Display Transition Experiment */
-    displayImg.querySelector('.visor--img').classList.toggle('transition-fadeIn');
-    displayImg.querySelector('.visor--img').classList.toggle('transition-fadeInPersist');
+    displayImg.querySelector('.visor__img').classList.toggle('transition-fadeIn');
+    displayImg.querySelector('.visor__img').classList.toggle('transition-fadeInPersist');
     /**/
-
+    
     if (direction == "left") {
         if (imageIndex > 0) {
             imageIndex--;
@@ -31,7 +31,7 @@ let arrowController = (e) => {
 
     //let visor = document.querySelector('.visor');
     let newImg = galleryImg[imageIndex].src;
-    displayImg.querySelector('.visor--img').src = newImg;
+    displayImg.querySelector('.visor__img').src = newImg;
     /* Active experiment */
     galleryImg[imageIndex].classList.toggle('active');
     /**/
@@ -46,33 +46,36 @@ let changeVisorImg = e => {
     /* */
 
     /* Display Transition Experiment */
-    displayImg.querySelector('.visor--img').classList.toggle('transition-fadeIn');
-    displayImg.querySelector('.visor--img').classList.toggle('transition-fadeInPersist');
+    displayImg.querySelector('.visor__img').classList.toggle('transition-fadeIn');
+    displayImg.querySelector('.visor__img').classList.toggle('transition-fadeInPersist');
     /**/
 
     let thisImageIndex = e.target.dataset.index; //Select the index data of the current image. 
     imageIndex = thisImageIndex; //Change the global value of the imageIndex.
 
-    displayImg.querySelector('.visor--img').src = newImg; //Replace the image src for the new one.
+    displayImg.querySelector('.visor__img').src = newImg; //Replace the image src for the new one.
 }
 
 /* Start Full View Gallery */
-let fullView = e => {
+let fullView = e =>  {
     displayImg = document.querySelector('.full__container'); // Change to the full view visor displayer.
     let newImg = e.target.src;
     /* */
-    let fullViewImage = displayImg.querySelector('.visor--img'); //Select the index data of the current image.
+    let fullViewImage = displayImg.querySelector('.visor__img'); //Select the index data of the current image.
     fullViewImage.src = newImg; //Change the global value of the imageIndex.
-
+   
     document.querySelector('.full__view').style.display = 'grid';
+
+    document.querySelector('.information__close').style.display = 'none'; //Hide the nav button.
 }
 
 /* Close Full View Gallery */
 let closeFullView = e => {
-    let imgDisplayer = displayImg.querySelector('.visor--img').src; //Locate the last value of the image full view displayer.
+    let imgDisplayer = displayImg.querySelector('.visor__img').src; //Locate the last value of the image full view displayer.
     displayImg = document.querySelector('.gallery__visor'); //Restore the principal visor image displayer.
-    displayImg.querySelector('.visor--img').src = imgDisplayer; // Asign the last image full view displayer value.
+    displayImg.querySelector('.visor__img').src = imgDisplayer; // Asign the last image full view displayer value.
     document.querySelector('.full__view').style.display = 'none'; //Delete de full view element.
+    document.querySelector('.information__close').style.display = 'block'; //Show the nav button. 
 }
 
 
@@ -84,10 +87,10 @@ for (let i = galleryImg.length - 1; i >= 0; i--) {
 /* */
 
 /* Call Arrow controller function */
-document.querySelectorAll('.arrow').forEach(e => {
+document.querySelectorAll('.arrows').forEach( e => {
     e.addEventListener('click', arrowController);
 });
 
 /* Call Full View Gallery Controller */
-document.querySelector('.gallery__visor .visor--img').addEventListener('click', fullView);
-document.querySelector('.close').addEventListener('click', closeFullView); //Call close full view function. 
+document.querySelector('.gallery__visor .visor__img').addEventListener('click', fullView);
+document.querySelector('.close-gallery').addEventListener('click', closeFullView); //Call close full view function. 
