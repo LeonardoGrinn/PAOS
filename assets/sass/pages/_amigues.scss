@@ -1,0 +1,98 @@
+.logos__desktop {
+    padding: 4rem;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows:  repeat(2, 1fr);
+
+    a {
+        cursor: pointer;
+    }
+    img {
+        width: 50%;
+
+        /* Ipad */
+        @include respond(ipad) {
+            width: 55%;
+        }
+    }
+
+   /* Ipad */
+   @include respond(ipad) {
+        grid-template-columns: repeat(3, 1fr);
+        padding: 0rem;
+        width: 90vw; 
+    }
+
+    /* Ipad */
+   @include respond(iphone-plus) {
+        display: none;
+    }
+}
+
+.room {
+    width: 70% !important;
+}
+
+.logo__empty {
+   /* Ipad */
+   @include respond(ipad) {
+        display: none;
+    }
+}
+
+.logos__movil {
+    display: none;
+
+    // iPhone Plus
+    @include respond(iphone-plus) {
+      display: block;
+      margin-bottom: 5rem;
+      .mySlides {
+        width: 90%;
+        margin-left: 5%;
+        padding: 2rem;
+      }
+
+      .w3-black, .w3-hover-black:hover {
+          color: $color-white !important;
+          background-color: $color-primary !important;
+      }
+
+      .w3-btn, .w3-button {
+          border: none;
+          display: inline-block;
+          padding: 8px 16px;
+          vertical-align: middle;
+          overflow: hidden;
+          text-decoration: none;
+          color: inherit;
+          background-color: inherit;
+          text-align: center;
+          cursor: pointer;
+          white-space: nowrap;
+          outline: none;
+          margin-top: 5rem;
+      }
+
+      .w3-display-left {
+        
+        transform: translate(0%,-50%);
+        -ms-transform: translate(-0%,-50%);
+      }
+
+      .w3-display-right {
+          
+         
+          transform: translate(0%,-50%);
+          -ms-transform: translate(0%,-50%);
+      }
+    }
+
+    // iPhone X
+    @include respond(iphone-x) {
+      .mySlides {
+        //margin-top: 20%;
+      }
+    }
+  }

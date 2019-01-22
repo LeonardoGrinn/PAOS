@@ -49,7 +49,7 @@
 
         </div> <!-- ./Header --> 
 
-        <div class="program__details">
+        <div class="program__details"> <!-- Program details -->
 
             <div class="program__empty"></div> <!-- Empty dive -->
             <div class="program__text"> <!-- Program text -->
@@ -78,7 +78,55 @@
                     adogjfjg ad fga fdgajafj afughadf gaoidfgjfobiobjgids-
                 </p>
             </div> <!-- ./Program text -->
+        </div> <!-- ./Program details-->
+
+        <div class="logos__container">
+            <div class="logos__desktop"> <!-- logos desktop -->
+                <div><a href="#"><img src="assets/img/amigues/logo-1.png" alt="Cala Aliance"></a></div>
+                <div><a href="#"><img src="assets/img/amigues/logo-2.png" alt="Cala Art Museum"></a></div>
+                <div><a href="#"><img class="room" src="assets/img/amigues/logo-3.png" alt="Cala The Room"></a></div>
+                <div><a href="#"><img src="assets/img/amigues/logo-4.png" alt="Mandala"></a></div>
+                <div><a href="#"><img src="assets/img/amigues/logo-5.png" alt="Open Studio Madrid"></a></div>
+                <div><a href="#"><img src="assets/img/amigues/logo-6.png" alt="Museo Amparo"></a></div>
+                <dir class="logo__empty"></dir>
+                <div class="logo__empty"></div>
+            </div>
         </div>
+
+        <div class="logos__movil">  <!-- logos movil -->
+            <div class="w3-content w3-display-container">
+              
+              <img class="mySlides" src="assets/img/amigues/movil/logo-1.png"> <!-- logo 1 -->
+              <img class="mySlides" src="assets/img/amigues/movil/logo-2.png"> <!-- logo 2 -->
+              <img class="mySlides" src="assets/img/amigues/movil/logo-3.png"> <!-- logo 3 -->
+              <img class="mySlides" src="assets/img/amigues/movil/logo-4.png"> <!-- logo 4 -->
+              <img class="mySlides" src="assets/img/amigues/movil/logo-5.png"> <!-- logo 5 -->
+              <img class="mySlides" src="assets/img/amigues/movil/logo-6.png"> <!-- logo 6 -->
+
+              <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+              <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+            </div>
+
+            <script>
+            var slideIndex = 1;
+            showDivs(slideIndex);
+
+            function plusDivs(n) {
+              showDivs(slideIndex += n);
+            }
+
+            function showDivs(n) {
+              var i;
+              var x = document.getElementsByClassName("mySlides");
+              if (n > x.length) {slideIndex = 1}
+              if (n < 1) {slideIndex = x.length}
+              for (i = 0; i < x.length; i++) {
+                 x[i].style.display = "none";
+              }
+              x[slideIndex-1].style.display = "block";
+            }
+            </script>
+          </div> <!-- ./logos movil -->
 
     </div> <!-- information__project -->
 
