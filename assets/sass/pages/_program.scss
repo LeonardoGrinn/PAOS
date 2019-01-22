@@ -1,0 +1,97 @@
+.program {
+    &__details {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0 7vw 0 3vw;
+
+       /* Ipad */
+       @include respond(ipad) {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    &__empty {
+       /* Ipad */
+       @include respond(ipad) {
+            display: none;
+        }
+    }
+
+    &__text {
+        margin-bottom: 5rem;
+        p {
+            font-size: 1.8rem;
+            line-height: 2.5rem;
+        }
+    }
+}
+
+.accordion {
+    display: grid;
+    grid-template-rows: 1fr;
+    
+    &__toggle {
+        cursor: pointer;
+        border-top: 1px solid $color-primary;
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 1rem;
+
+        h2 {
+            font-size: 3rem;
+            text-transform: uppercase;
+            font-family: "Liberation-italic";
+            margin-bottom: -1rem;
+            margin-top: 4rem;
+        }
+
+        p {
+            font-size: 1.5rem;
+        }
+
+        span {
+            color: $color-primary-light;
+            border-bottom: 2.5px solid $color-primary-light;
+
+            /* Ipad */
+            @include respond(ipad) {
+                display: none;
+            }
+        }
+    }
+
+    &__content {
+        display: none;
+        margin-bottom: 3rem;
+        .default {
+            display: block;
+        }
+    }
+
+    &__container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        /* Ipad */
+        @include respond(ipad) {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    &__text {
+        font-size: 1.8rem;
+        line-height: 2.5rem;
+        overflow-y: auto;
+        max-height: 25rem;
+    }
+
+    &__empty {
+        /* Ipad */
+        @include respond(ipad) {
+            display: none;
+        }
+    }
+}
+
+
+
