@@ -120,29 +120,11 @@
 }
 
 .third-row {
-    margin-top: 5rem;
-    margin-bottom: 5rem;
-    width: 100vw;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    img {
-        width: 50%;
+   margin-top: 5rem;
 
-        /* iphone-plus */
-        @include respond(ipad) {
-            width: 60%;
-        }
-    }
-
-    /* iPad*/
-    @include respond(ipad) {
-        grid-template-columns: repeat(2, 1fr);
-        width: 90vw;
-    }
-
-    /* iphone-plus */
-    @include respond(iphone-plus) {
-        grid-template-columns: 1fr;
-        margin-left: 16.5vw;
-    }
+   .logos__container {
+       img {
+           width: 70%;
+       }
+   }
 }
