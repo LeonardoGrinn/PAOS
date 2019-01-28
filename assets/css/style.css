@@ -3373,3 +3373,989 @@ body {
       font-size: 2rem; } }
   .channel__link a {
     text-decoration: none; }
+
+.residency__years {
+  grid-area: residency__years; }
+
+.residency__selectedYear {
+  grid-area: residency__selectedYear; }
+
+.residency__filter {
+  grid-area: residency__filter; }
+
+.residency {
+  display: grid;
+  grid-template-columns: 1fr 7fr;
+  /* ipad */
+  /*@if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+
+    @if $breakpoint == md-desktop {
+        @media only screen and (max-width: 85.3em) { @content };    //1200px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    }*/ }
+  @media only screen and (max-width: 50em), only screen and (hover: none) {
+    .residency {
+      grid-template-columns: 1fr;
+      padding: 0;
+      margin: 0; } }
+  .residency__sidemenu {
+    border-right: 1px solid #19185A;
+    min-height: 100vh;
+    padding-left: 0 !important;
+    margin-left: -5rem;
+    padding-right: 4rem;
+    /* ipad */
+    /*@if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+
+    @if $breakpoint == md-desktop {
+        @media only screen and (max-width: 85.3em) { @content };    //1200px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    }*/
+    /* iphone-plus */
+    /*@if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+
+    @if $breakpoint == md-desktop {
+        @media only screen and (max-width: 85.3em) { @content };    //1200px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    }*/ }
+    .residency__sidemenu a {
+      text-decoration: none; }
+    @media only screen and (max-width: 50em), only screen and (hover: none) {
+      .residency__sidemenu {
+        min-height: auto;
+        position: fixed;
+        width: 100vw;
+        background-color: #fff;
+        transform: translateY(-4rem);
+        margin-left: -10rem;
+        padding-left: 0;
+        border-bottom: 1px solid #19185A;
+        display: grid;
+        grid-template-areas: 'residency__years residency__years residency__years residency__years residency__years residency__years' 'residency__selectedYear residency__selectedYear residency__selectedYear residency__filter residency__filter residency__filter'; } }
+    @media only screen and (max-width: 31.25em) {
+      .residency__sidemenu {
+        margin-left: -1.8rem;
+        grid-template-areas: 'residency__years residency__years residency__years residency__years residency__years residency__years' 'residency__filter residency__filter residency__filter residency__filter residency__filter residency__filter'; } }
+  .residency__years {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    font-size: 1.3rem;
+    margin-top: 5rem;
+    /* ipad */
+    /*@if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+
+    @if $breakpoint == md-desktop {
+        @media only screen and (max-width: 85.3em) { @content };    //1200px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    }*/
+    /* iphone-plus */
+    /*@if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+
+    @if $breakpoint == md-desktop {
+        @media only screen and (max-width: 85.3em) { @content };    //1200px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    }*/ }
+    .residency__years a {
+      color: #19185A; }
+    @media only screen and (max-width: 50em), only screen and (hover: none) {
+      .residency__years {
+        background-color: #fff;
+        width: 100vw;
+        margin-top: -7rem;
+        height: auto;
+        display: flex;
+        justify-content: flex-end; }
+        .residency__years a {
+          margin-top: 2rem;
+          margin-left: 3rem;
+          color: #3235FF;
+          font-size: 1.4rem; }
+          .residency__years a:last-child {
+            padding-right: 5rem; } }
+    @media only screen and (max-width: 31.25em) {
+      .residency__years {
+        margin-top: 1rem; }
+        .residency__years a:last-child {
+          padding-right: 2rem; } }
+  .residency__selectedYear {
+    color: #19185A;
+    font-size: 5rem;
+    text-align: center;
+    /* ipad */
+    /*@if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+
+    @if $breakpoint == md-desktop {
+        @media only screen and (max-width: 85.3em) { @content };    //1200px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    }*/
+    /* iphone-plus */
+    /*@if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+
+    @if $breakpoint == md-desktop {
+        @media only screen and (max-width: 85.3em) { @content };    //1200px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    }*/ }
+    @media only screen and (max-width: 50em), only screen and (hover: none) {
+      .residency__selectedYear {
+        background-color: #fff;
+        margin-top: -4rem;
+        height: 8rem; } }
+    @media only screen and (max-width: 31.25em) {
+      .residency__selectedYear {
+        display: none; } }
+  .residency__residents {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    overflow-x: auto;
+    max-height: 30rem;
+    /* ipad */
+    /*@if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+
+    @if $breakpoint == md-desktop {
+        @media only screen and (max-width: 85.3em) { @content };    //1200px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    }*/ }
+    .residency__residents a {
+      color: #3235FF;
+      text-transform: uppercase; }
+    @media only screen and (max-width: 50em), only screen and (hover: none) {
+      .residency__residents {
+        display: none; } }
+  .residency__filter {
+    text-align: right;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-self: center;
+    margin-top: 5rem;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    line-height: 2rem;
+    /* ipad */
+    /*@if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+
+    @if $breakpoint == md-desktop {
+        @media only screen and (max-width: 85.3em) { @content };    //1200px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    }*/
+    /* iphone-plus */
+    /*@if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+
+    @if $breakpoint == md-desktop {
+        @media only screen and (max-width: 85.3em) { @content };    //1200px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    }*/ }
+    .residency__filter a {
+      color: #19185A; }
+    .residency__filter span {
+      font-size: 2.2rem;
+      color: #3235FF; }
+    @media only screen and (max-width: 50em), only screen and (hover: none) {
+      .residency__filter {
+        background-color: #fff;
+        margin-top: -2rem;
+        height: 8rem;
+        justify-content: flex-end; }
+        .residency__filter a {
+          padding-right: 5rem; } }
+    @media only screen and (max-width: 31.25em) {
+      .residency__filter {
+        margin-top: 1rem; }
+        .residency__filter a {
+          padding-right: 2rem; } }
+  .residency__tag {
+    float: left;
+    margin-top: 5rem;
+    margin-left: 4rem; }
+  .residency__name {
+    float: right; }
+  .residency__details {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 7vw 0 3vw;
+    /* Ipad */
+    /*@if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+
+    @if $breakpoint == md-desktop {
+        @media only screen and (max-width: 85.3em) { @content };    //1200px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    }*/ }
+    @media only screen and (max-width: 50em), only screen and (hover: none) {
+      .residency__details {
+        grid-template-columns: 1fr; } }
+  .residency__empty {
+    /* Ipad */
+    /*@if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+
+    @if $breakpoint == md-desktop {
+        @media only screen and (max-width: 85.3em) { @content };    //1200px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    }*/ }
+    @media only screen and (max-width: 50em), only screen and (hover: none) {
+      .residency__empty {
+        display: none; } }
+  .residency__text {
+    margin-bottom: 5rem;
+    /* ipad */
+    /*@if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+
+    @if $breakpoint == md-desktop {
+        @media only screen and (max-width: 85.3em) { @content };    //1200px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    }*/ }
+    .residency__text p {
+      font-size: 1.8rem;
+      line-height: 2.5rem; }
+    @media only screen and (max-width: 50em), only screen and (hover: none) {
+      .residency__text {
+        padding: 0 5rem 0 5rem; } }
+  .residency__header {
+    margin-top: 10rem;
+    display: grid;
+    grid-template-columns: 2fr 4fr 2fr;
+    /* ipad */
+    /*@if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+
+    @if $breakpoint == md-desktop {
+        @media only screen and (max-width: 85.3em) { @content };    //1200px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    }*/
+    /* iPhone Plus */
+    /*@if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+
+    @if $breakpoint == md-desktop {
+        @media only screen and (max-width: 85.3em) { @content };    //1200px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    }*/ }
+    @media only screen and (max-width: 50em), only screen and (hover: none) {
+      .residency__header {
+        grid-template-columns: 2fr 4fr 2fr;
+        margin-top: 4rem;
+        margin-left: 5rem; } }
+    @media only screen and (max-width: 31.25em) {
+      .residency__header {
+        grid-template-columns: 1fr 5fr 0.1fr; } }
+  .residency__title span {
+    color: #3235FF; }
+  .residency__title h2 {
+    text-decoration: underline;
+    font-size: 3.8rem;
+    /* ipad */
+    /*@if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+
+    @if $breakpoint == md-desktop {
+        @media only screen and (max-width: 85.3em) { @content };    //1200px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    }*/
+    /* iPhone Plus */
+    /*@if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+
+    @if $breakpoint == md-desktop {
+        @media only screen and (max-width: 85.3em) { @content };    //1200px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    }*/ }
+    @media only screen and (max-width: 50em), only screen and (hover: none) {
+      .residency__title h2 {
+        font-size: 4rem;
+        line-height: 5rem; } }
+    @media only screen and (max-width: 31.25em) {
+      .residency__title h2 {
+        font-size: 3.5rem; } }
+  .residency__title p {
+    color: #3235FF;
+    font-size: 1.5rem;
+    text-align: justify;
+    /* ipad */
+    /*@if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+
+    @if $breakpoint == md-desktop {
+        @media only screen and (max-width: 85.3em) { @content };    //1200px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    }*/ }
+    @media only screen and (max-width: 50em), only screen and (hover: none) {
+      .residency__title p {
+        font-size: 1.8rem; } }
+  .residency__accordion {
+    display: grid;
+    grid-template-rows: 1fr;
+    /* ipad */
+    /*@if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+
+    @if $breakpoint == md-desktop {
+        @media only screen and (max-width: 85.3em) { @content };    //1200px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    }*/
+    /* iphone plus */
+    /*@if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+
+    @if $breakpoint == md-desktop {
+        @media only screen and (max-width: 85.3em) { @content };    //1200px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    }*/ }
+    @media only screen and (max-width: 50em), only screen and (hover: none) {
+      .residency__accordion {
+        margin-top: 5rem;
+        margin-left: -10rem;
+        margin-right: -10rem; } }
+    @media only screen and (max-width: 31.25em) {
+      .residency__accordion {
+        margin-top: 10rem;
+        margin-left: -5rem;
+        margin-right: -5rem; } }
+    .residency__accordion__toggle {
+      cursor: pointer;
+      border-top: 1px solid #19185A;
+      margin-bottom: 1rem;
+      /* ipad */
+      /*@if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+
+    @if $breakpoint == md-desktop {
+        @media only screen and (max-width: 85.3em) { @content };    //1200px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    }*/ }
+      @media only screen and (max-width: 50em), only screen and (hover: none) {
+        .residency__accordion__toggle {
+          padding-right: 5rem; } }
+      .residency__accordion__toggle h2 {
+        font-size: 3rem;
+        text-transform: uppercase;
+        font-family: "Liberation-italic";
+        margin-bottom: -1rem;
+        margin-top: 4rem;
+        /* iphone */
+        /*@if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+
+    @if $breakpoint == md-desktop {
+        @media only screen and (max-width: 85.3em) { @content };    //1200px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    }*/ }
+        @media only screen and (max-width: 25em) {
+          .residency__accordion__toggle h2 {
+            font-size: 2.5rem; } }
+      .residency__accordion__toggle p {
+        font-size: 1.5rem; }
+      .residency__accordion__toggle span {
+        color: #3235FF;
+        border-bottom: 2.5px solid #3235FF;
+        /* Ipad */
+        /*@if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+
+    @if $breakpoint == md-desktop {
+        @media only screen and (max-width: 85.3em) { @content };    //1200px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    }*/ }
+        @media only screen and (max-width: 50em), only screen and (hover: none) {
+          .residency__accordion__toggle span {
+            display: none; } }
+    .residency__accordion__content {
+      display: none;
+      margin-bottom: 3rem; }
+      .residency__accordion__content .default {
+        display: block; }
+    .residency__accordion__container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      /* Ipad */
+      /*@if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+
+    @if $breakpoint == md-desktop {
+        @media only screen and (max-width: 85.3em) { @content };    //1200px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    }*/ }
+      @media only screen and (max-width: 50em), only screen and (hover: none) {
+        .residency__accordion__container {
+          grid-template-columns: 1fr; } }
+    .residency__accordion__text {
+      font-size: 1.8rem;
+      line-height: 2.5rem;
+      overflow-y: auto;
+      max-height: 25rem; }
+    .residency__accordion__empty {
+      /* Ipad */
+      /*@if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+
+    @if $breakpoint == md-desktop {
+        @media only screen and (max-width: 85.3em) { @content };    //1200px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    }*/ }
+      @media only screen and (max-width: 50em), only screen and (hover: none) {
+        .residency__accordion__empty {
+          display: none; } }
+  .residency__button {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-self: flex-start;
+    /* ipad */
+    /*@if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+
+    @if $breakpoint == md-desktop {
+        @media only screen and (max-width: 85.3em) { @content };    //1200px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    }*/ }
+    .residency__button a {
+      background-color: #3235FF;
+      color: #fff;
+      padding: 1rem 2.5rem 1rem 2.5rem;
+      text-decoration: none;
+      font-size: 1.8rem;
+      text-transform: uppercase; }
+    @media only screen and (max-width: 50em), only screen and (hover: none) {
+      .residency__button {
+        display: none; } }
+  .residency__image {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    /* Blue filter */
+    filter: grayscale(1);
+    transition: all 0.8s;
+    /* ipad */
+    /*@if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+
+    @if $breakpoint == md-desktop {
+        @media only screen and (max-width: 85.3em) { @content };    //1200px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    }*/ }
+    .residency__image:hover {
+      /* Blue filter */
+      filter: grayscale(0); }
+    @media only screen and (max-width: 50em), only screen and (hover: none) {
+      .residency__image {
+        max-width: 100vw; } }
+    .residency__image img {
+      /* ipad */
+      /*@if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+
+    @if $breakpoint == md-desktop {
+        @media only screen and (max-width: 85.3em) { @content };    //1200px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    }*/
+      /* iphone */
+      /*@if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+
+    @if $breakpoint == md-desktop {
+        @media only screen and (max-width: 85.3em) { @content };    //1200px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    }*/ }
+      @media only screen and (max-width: 50em), only screen and (hover: none) {
+        .residency__image img {
+          max-width: 100vw; } }
+      @media only screen and (max-width: 31.25em) {
+        .residency__image img {
+          margin-left: 6rem; } }
+    .residency__image .w3-display-left, .residency__image .w3-display-right {
+      background-color: #19185A;
+      height: 4.5rem;
+      width: 4.5rem;
+      color: #fff;
+      border-color: transparent;
+      opacity: 0.8;
+      transition: all 0.2s;
+      font-size: 2rem;
+      /* iphone-plus */
+      /*@if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+
+    @if $breakpoint == md-desktop {
+        @media only screen and (max-width: 85.3em) { @content };    //1200px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    }*/ }
+      @media only screen and (max-width: 31.25em) {
+        .residency__image .w3-display-left, .residency__image .w3-display-right {
+          height: 4rem;
+          width: 4rem;
+          font-size: 1.8rem; } }
+      .residency__image .w3-display-left:hover, .residency__image .w3-display-right:hover {
+        opacity: 1; }
+    .residency__image .w3-display-left {
+      transform: translateY(-650%);
+      /* ipad */
+      /*@if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+
+    @if $breakpoint == md-desktop {
+        @media only screen and (max-width: 85.3em) { @content };    //1200px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    }*/
+      /* iphone-plus */
+      /*@if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+
+    @if $breakpoint == md-desktop {
+        @media only screen and (max-width: 85.3em) { @content };    //1200px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    }*/ }
+      @media only screen and (max-width: 50em), only screen and (hover: none) {
+        .residency__image .w3-display-left {
+          transform: translateY(-450%); } }
+      @media only screen and (max-width: 31.25em) {
+        .residency__image .w3-display-left {
+          transform: translateY(-260%);
+          margin-left: 6rem; } }
+    .residency__image .w3-display-right {
+      transform: translateY(-650%);
+      float: right;
+      /* ipad */
+      /*@if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+
+    @if $breakpoint == md-desktop {
+        @media only screen and (max-width: 85.3em) { @content };    //1200px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    }*/
+      /* iphone-plus */
+      /*@if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+
+    @if $breakpoint == md-desktop {
+        @media only screen and (max-width: 85.3em) { @content };    //1200px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    }*/ }
+      @media only screen and (max-width: 50em), only screen and (hover: none) {
+        .residency__image .w3-display-right {
+          transform: translateY(-450%); } }
+      @media only screen and (max-width: 31.25em) {
+        .residency__image .w3-display-right {
+          transform: translateY(-260%); } }
