@@ -1,5 +1,18 @@
 .home {
-    overflow-y: hidden; 
+    overflow-y: hidden !important; 
+    max-height: 100vh !important;
+
+    // iPhone Plus
+    @include respond(ipad) {
+        overflow-y: hidden !important; 
+        max-height: 100vh !important; 
+    }
+
+    // iPhone Plus
+    @include respond(iphone-plus) {
+        overflow-y: hidden !important; 
+        max-height: 100vh !important; 
+    }
     &__logo {
         -ms-display: flex;
         display: flex;

@@ -17,12 +17,12 @@
 <body class="information">
   <!-- ====================== N A V I G A T I O N ====================== -->
   <div>
-    <a href="index.html"><span class="information__close">&times;</span></a>
+    <a href="home.html"><span class="information__close">&times;</span></a>
   </div>
 
  <!-- ====================== M A I N  S I T E  C O N T E N T ====================== -->
   <main> <!-- tells search engines this is the main part of the site. -->
-    <div class="information__project"> <!-- Aquí empiezas a copiar -->
+    <div class="information__project">
         <div class="information__header"> <!-- Header -->
 
             <div class="information__empty"></div>  
@@ -61,7 +61,7 @@
                     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
                     nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
-                    reprehenderit in voluptate velit esse cillum dolore. 
+                    reprehenderit in voluptate velit esse cillum dolore. <br> 
                     Sed ut perspiciatis unde omnis iste natus error sit voluptatem
                     accusantium doloremque laudantium, totam rem aperiam, eaque ipsa 
                     quae ab illo inventore veritatis et quasi architecto beatae vitae 
@@ -82,69 +82,85 @@
 
     </div> <!-- information__project -->
 
-    <div class="information__project"> <!-- Aquí empiezas a copiar -->
-            <div class="information__header"> <!-- Header -->
-    
-                <div class="information__empty"></div>  
-    
-                <div class="information__title">
-                    <h2>
-                        <span>↳</span>SOBRE EL<br>
-                        PROYECTO
-                    </h2>
-                    <p>
-                        ESPACIO PARA OTRA LÍNES<br>
-                        IMPORTANTE O SUB TÍTULO
-                    </p>
-                </div> 
-    
-                <div class="information__empty"></div> <!-- Empty -->
-    
-            </div> <!-- ./Header --> 
-    
-            <div class="information__image"> <!-- Image container -->
-                <div class="w3-content w3-display-container">
-              
-                        <img class="mySlides2" src="assets/img/info/proyecto-1.png"> <!-- logo 1 -->
-                        <img class="mySlides2" src="assets/img/info/proyecto-2.png"> <!-- logo 2 -->
-                        <img class="mySlides2" src="assets/img/info/proyecto-3.png"> <!-- logo 2 -->
-          
-                        <button id="button-left-2" class="w3-button w3-black w3-display-left">&#10094;</button>
-                        <button id="button-right-2" class="w3-button w3-black w3-display-right">&#10095;</button>
+    <div class="patronato__second-row">  <!-- second row -->
+
+        <div class="patronato__empty"></div>
+        <div class="patronato__form"> <!-- patronato__form -->
+            <h1 class="patronato__title">RECIBE NUESTRO NEWSLETTER</h1>
+            <div class="form">
+                <form method="post" class="patronato__contact form-horizontal" action="ajaxSubmit.php">
+                    <div class="form__group">
+                        <input type="email" class="patronato__control" placeholder=" correo electrónico" name="email" required>
+                    </div>
+            
+                    <div class="form__group form__send">
+                        <button type="submit" name="submit" class="btn-newsletter-patronato">SUSCRIBETE</button>
+                    </div>
+                            
+                </form>
+                <div class="patronato__buttons">
+                    <a href="#">DONAR</a>
+                    <a href="#">BROCHURE</a>
                 </div>
-            </div> <!-- ./Image container -->
-    
-            <div class="information__details"> <!-- information__details -->
-                <div class="information__empty"></div> <!-- Empty -->
-                <div class="information__text">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-                        nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
-                        reprehenderit in voluptate velit esse cillum dolore. 
-                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                        accusantium doloremque laudantium, totam rem aperiam, eaque ipsa 
-                        quae ab illo inventore veritatis et quasi architecto beatae vitae 
-                        dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit 
-                        aspernatur aut odit aut fugit, sed quia consequuntur magni dolores 
-                        eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, 
-                        qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, 
-                        sed quia non numquam eius modi tempora incidunt ut labore et dolore
-                        magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis 
-                        nostrum exercitationem ullam corporis suscipit laboriosam, nisi 
-                        ut aliquid ex ea commodi consequatur? Quis autem vel eum iure 
-                        reprehenderit qui in ea voluptate velit esse quam nihil molestiae 
-                        consequatur, vel illum qui dolorem eum fugiat quo voluptas 
-                        nulla pariatu.
-                    </p>
-                </div> <!-- ./information__text -->
-            </div> <!-- ./information__details -->
-    
-        </div> <!-- information__project -->
+            </div><!-- form -->
+        </div> <!-- ./patronato__form -->
+    </div>
+
+    <div class="third-row">
+
+    <!-- R E C U E R D A  M O D I F I C A R  A M B A S  G A L E R I A S -->
+          
+    <div class="logos__container">
+        <div class="logos__desktop"> <!-- logos desktop -->
+            <div><a href="#"><img src="assets/img/patronato/logo-1.png" alt="Cala Aliance"></a></div>
+            <div><a href="#"><img src="assets/img/patronato/logo-2.png" alt="Cala Art Museum"></a></div>
+            <div><a href="#"><img src="assets/img/patronato/logo-3.png" alt="Cala The Room"></a></div>
+            <div><a href="#"><img src="assets/img/patronato/logo-4.png" alt="Mandala"></a></div>
+            <dir class="logo__empty"></dir>
+            <div class="logo__empty"></div>
+        </div>
+    </div>
+
+    <div class="logos__movil">  <!-- logos movil -->
+        <div class="w3-content w3-display-container">
+          
+          <img class="mySlides" src="assets/img/patronato/logo-1.png"> <!-- logo 1 -->
+          <img class="mySlides" src="assets/img/patronato/logo-2.png"> <!-- logo 2 -->
+          <img class="mySlides" src="assets/img/patronato/logo-3.png"> <!-- logo 3 -->
+          <img class="mySlides" src="assets/img/patronato/logo-4.png"> <!-- logo 4 -->
+
+          <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+          <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+        </div>
+
+        <!-- R E C U E R D A  M O D I F I C A R  A M B A S  G A L E R I A S -->
+
+        <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+          showDivs(slideIndex += n);
+        }
+
+        function showDivs(n) {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          if (n > x.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = x.length}
+          for (i = 0; i < x.length; i++) {
+             x[i].style.display = "none";
+          }
+          x[slideIndex-1].style.display = "block";
+        }
+        </script>
+      </div> 
+    </div>
+
   </main> 
 
-  <!-- JS -->
-  <script type="text/javascript" src="assets/js/info/gallery.js"></script>  
+  <!-- JS
+  <script type="text/javascript" src="assets/js/gallery.js"></script> -->
+  <script type="text/javascript" src="assets/js/patronato/gallery.js"></script> 
 </body>
 </html>

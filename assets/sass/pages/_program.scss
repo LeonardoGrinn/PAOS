@@ -29,6 +29,19 @@
 .accordion {
     display: grid;
     grid-template-rows: 1fr;
+
+    /* Ipad */
+    @include respond(ipad) {
+        width: 100vw;
+        margin-left: -10rem; /* bcs of gallery */
+        margin-right: -10rem; /* bcs of gallery */
+    }
+
+    /* iPhone Plus */
+    @include respond(iphone-plus) {
+        margin-left: -2rem; /* bcs of gallery */
+        margin-right: 0rem; /* bcs of gallery */
+    }
     
     &__toggle {
         cursor: pointer;
@@ -37,12 +50,19 @@
         justify-content: flex-end;
         margin-bottom: 1rem;
 
+        
+
         h2 {
             font-size: 3rem;
             text-transform: uppercase;
             font-family: "Liberation-italic";
             margin-bottom: -1rem;
             margin-top: 4rem;
+
+            /* Ipad */
+            @include respond(ipad) {
+                margin-right: 4rem;/* bcs of gallery */
+            }
         }
 
         p {
@@ -83,6 +103,11 @@
         line-height: 2.5rem;
         overflow-y: auto;
         max-height: 25rem;
+
+        @include respond(ipad) {
+            
+            padding: 2rem;/* bcs of gallery */
+        }
     }
 
     &__empty {

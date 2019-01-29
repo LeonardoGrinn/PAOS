@@ -1116,6 +1116,84 @@ body {
   border-bottom: 3px solid #3235FF;
   padding: 0; }
 
+.navigation__link__seven:hover, .navigation__link__seven.active {
+  color: #3235FF; }
+
+.navigation__link__seven {
+  position: absolute;
+  right: 2rem;
+  bottom: 1rem;
+  color: #19185A;
+  font-size: 2rem !important;
+  list-style: none;
+  /*@if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+
+    @if $breakpoint == md-desktop {
+        @media only screen and (max-width: 85.3em) { @content };    //1200px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    }*/
+  /*@if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+
+    @if $breakpoint == md-desktop {
+        @media only screen and (max-width: 85.3em) { @content };    //1200px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    }*/
+  /*@if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+
+    @if $breakpoint == md-desktop {
+        @media only screen and (max-width: 85.3em) { @content };    //1200px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    }*/ }
+  @media only screen and (max-width: 50em), only screen and (hover: none) {
+    .navigation__link__seven {
+      bottom: 6rem; } }
+  @media only screen and (max-width: 31.25em) {
+    .navigation__link__seven {
+      bottom: 15vh;
+      font-size: 1.8rem !important; } }
+  @media only screen and (max-width: 23.4375em) and (min-height: 50.75em) {
+    .navigation__link__seven {
+      display: none; } }
+
 .navigation__checkbox:checked ~ .navigation__background {
   transform: scale(80);
   /*@if $breakpoint == phone {
@@ -1240,7 +1318,54 @@ body {
 
 /* -------------------- Pages Files -------------------- */
 .home {
-  overflow-y: hidden; }
+  overflow-y: hidden !important;
+  max-height: 100vh !important;
+  /*@if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+
+    @if $breakpoint == md-desktop {
+        @media only screen and (max-width: 85.3em) { @content };    //1200px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    }*/
+  /*@if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+
+    @if $breakpoint == md-desktop {
+        @media only screen and (max-width: 85.3em) { @content };    //1200px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    }*/ }
+  @media only screen and (max-width: 50em), only screen and (hover: none) {
+    .home {
+      overflow-y: hidden !important;
+      max-height: 100vh !important; } }
+  @media only screen and (max-width: 31.25em) {
+    .home {
+      overflow-y: hidden !important;
+      max-height: 100vh !important; } }
   .home__logo {
     -ms-display: flex;
     display: flex;
@@ -2657,7 +2782,60 @@ body {
 
 .accordion {
   display: grid;
-  grid-template-rows: 1fr; }
+  grid-template-rows: 1fr;
+  /* Ipad */
+  /*@if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+
+    @if $breakpoint == md-desktop {
+        @media only screen and (max-width: 85.3em) { @content };    //1200px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    }*/
+  /* iPhone Plus */
+  /*@if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+
+    @if $breakpoint == md-desktop {
+        @media only screen and (max-width: 85.3em) { @content };    //1200px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    }*/ }
+  @media only screen and (max-width: 50em), only screen and (hover: none) {
+    .accordion {
+      width: 100vw;
+      margin-left: -10rem;
+      /* bcs of gallery */
+      margin-right: -10rem;
+      /* bcs of gallery */ } }
+  @media only screen and (max-width: 31.25em) {
+    .accordion {
+      margin-left: -2rem;
+      /* bcs of gallery */
+      margin-right: 0rem;
+      /* bcs of gallery */ } }
   .accordion__toggle {
     cursor: pointer;
     border-top: 1px solid #19185A;
@@ -2669,7 +2847,31 @@ body {
       text-transform: uppercase;
       font-family: "Liberation-italic";
       margin-bottom: -1rem;
-      margin-top: 4rem; }
+      margin-top: 4rem;
+      /* Ipad */
+      /*@if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+
+    @if $breakpoint == md-desktop {
+        @media only screen and (max-width: 85.3em) { @content };    //1200px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    }*/ }
+      @media only screen and (max-width: 50em), only screen and (hover: none) {
+        .accordion__toggle h2 {
+          margin-right: 4rem;
+          /* bcs of gallery */ } }
     .accordion__toggle p {
       font-size: 1.5rem; }
     .accordion__toggle span {
@@ -2733,7 +2935,30 @@ body {
     font-size: 1.8rem;
     line-height: 2.5rem;
     overflow-y: auto;
-    max-height: 25rem; }
+    max-height: 25rem;
+    /*@if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+
+    @if $breakpoint == md-desktop {
+        @media only screen and (max-width: 85.3em) { @content };    //1200px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    }*/ }
+    @media only screen and (max-width: 50em), only screen and (hover: none) {
+      .accordion__text {
+        padding: 2rem;
+        /* bcs of gallery */ } }
   .accordion__empty {
     /* Ipad */
     /*@if $breakpoint == phone {
