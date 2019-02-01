@@ -6,7 +6,7 @@ if (isset($_POST['submit'])) {
   $message = "Hola, deseo recibir tus newsletter agregame a la lista: ".$name.".\n\n".$mailFrom;
 
 
-  $mailTo = "correo@paosgdl.com"; //* contacto@landscapemexico.com */
+  $mailTo = "paos.comunicacion@gmail.com"; /*  */
   $headers = "From: ".$mailFrom;
   $txt = "Esta persona desea recibir tu newsletters: ".$name.".\n\n".$message;
 
