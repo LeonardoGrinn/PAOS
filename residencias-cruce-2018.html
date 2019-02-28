@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/icon-font.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" type="image/png" href="assets/img/favicon.png">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <title>PAOS GDL</title>
+</head>
+
+<body class="information">
+    <!-- ====================== N A V I G A T I O N ====================== -->
+    <div>
+        <a href="index.html"><span class="information__close">&times;</span></a>
+    </div>
+
+    <!-- ====================== M A I N  S I T E  C O N T E N T ====================== -->
+    <main class="residency">
+        <!-- tells search engines this is the main part of the site. -->
+
+        <div class="residency__sidemenu">
+            <div class="residency__years">
+                <a href="#">2015</a>
+                <a href="#">2016</a>
+                <a href="#">2017</a>
+            </div>
+            <div class="residency__selectedYear">
+                <p>2018</p>
+            </div>
+            <div class="residency__residents">
+                <a href="#">Alicia Herrero</a>
+                <a href="#">Carlos Aires</a>
+                <a href="#">Miki Leal</a>
+                <a href="#">Mandy El-Sayegh </a>
+                <a href="#">Humberto Ramírez</a>
+                <a href="#">Diana Calderón</a>
+                <a href="#">Aldo ÁlvarezTostado</a>
+                <a href="#">Thiago Martins de Melo</a>
+                <a href="#">Lourdes Martínez</a>
+                <a href="#">Hiram Constantino</a>
+
+
+
+
+
+            </div>
+            <div class="residency__filter">
+                <form method="get">
+                    <a href="residencias-local-2018.html"><span>☐</span> Local</a><br><!-- remember to add checked -->
+                    <a href="residencias-foranea-2018.html"><span>☐</span> Foránea</a><br>
+                    <!-- checked symbol example -->
+                    <a href="residencias-2018.html"><span>☒</span> #Cruce</a><br><br>
+                </form>
+            </div>
+        </div>
+        <div>
+            <div class="residency__accordion">
+                <!-- Accordion -->
+                
+                    <div class="residency__accordion">
+                        <!-- Accordion -->
+                        <div class="residency__accordion__toggle">
+                            <!-- Program title & subtitle -->
+                            <div class="residency__tag">
+                                <p>#CRUCE<br>JULIO</p>
+                            </div>
+                            <div class="residency__name">
+                                <h2><span>↙</span>DIANA CALDERÓN</h2>
+                                <p>Verbo Transitivo</p>
+                            </div>
+                        </div> <!-- ./Program title & subtitle -->
+                        <div class="residency__accordion__content">
+                            <!-- Program details -->
+                            <div class="residency__header">
+                                <!-- Header -->
+
+                                <div class="residency__empty"></div>
+
+                                <div class="residency__title">
+                                    <h2>
+                                        <span>↳</span>DIANA<br>
+                                        CALDERÓN
+                                    </h2>
+                                    <p>
+                                        VERBO TRANSITIVO
+                                    </p>
+
+                                    <br>
+                                    <br>
+                                    <br>
+                                </div>
+
+                                <div class="residency__empty"></div> <!-- Empty -->
+
+                            </div> <!-- ./Header -->
+                            <div class="residency__accordion__container">
+                                <div class="residency__button">
+                                    <a href="#">Ver cápsula</a>
+                                </div> <!-- Empty -->
+                                <div class="residency__text">
+                                    <p>
+                                        A lo largo de su residencia Diana Calderón desarrolló una pequeña instalación
+                                        que explora el material (tela, hilo,
+                                        estampa, performance) a través del pensamiento libre e intuitivo, abierto desde
+                                        la conciencia del "estar presente". Su
+                                        estudio puede describirse como un espacio transitorio visceral, de un "interior"
+                                        de la artista. En este trabajo,
+                                        Calderón se permite introspecciones, meditaciones y que su subconsciente se
+                                        materialice; a través de materiales cómodos
+                                        y familiares para ella crea piezas incómodas de articular.
+
+
+                                        <br><br>
+                                        <br><br>
+                                        <strong>Diana Calderón, (Chihuahua, 1981)</strong>
+                                        <br><br>
+                                        Su trabajo actual investiga sus raíces y cultura, cruzar fronteras físicamente o
+                                        espiritualmente, explorando referencias
+                                        de la arquitectura y arqueología. Cada obra que realiza significa alcanzar un
+                                        reto, es documentación, o el resolver
+                                        problemas de una manera creativa.
+
+
+
+
+
+                                    </p>
+                                </div> <!-- ./information__text -->
+                            </div> <!-- ./residency__accordion__containe -->
+                            <div class="residency__image">
+                                <!-- Image container -->
+                                <div class="w3-content w3-display-container">
+
+                                    <img class="mySlides1" src="assets/img/info/proyecto-1.png"> <!-- logo 1 -->
+                                    <img class="mySlides1" src="assets/img/info/proyecto-2.png"> <!-- logo 2 -->
+
+                                    <button id="button-left-1"
+                                        class="w3-button w3-black w3-display-left">&#10094;</button>
+                                    <button id="button-right-1"
+                                        class="w3-button w3-black w3-display-right">&#10095;</button>
+                                </div>
+                            </div> <!-- ./Image container -->
+                        </div> <!-- ./Program details -->
+                        
+
+                                    </div> <!-- ./Accordion -->
+                                </div>
+
+
+    </main>
+
+    <!-- JS -->
+    <script type="text/javascript" src="assets/js/residency/accordion.js"></script>
+    <script type="text/javascript" src="assets/js/residency/gallery.js"></script>
+</body>
+
+</html>
