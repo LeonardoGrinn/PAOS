@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/icon-font.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" type="image/png" href="assets/img/favicon.png">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <title>PAOS GDL</title>
+</head>
+
+<body class="information">
+    <!-- ====================== N A V I G A T I O N ====================== -->
+    <div>
+        <a href="index.html"><span class="information__close">&times;</span></a>
+    </div>
+
+    <!-- ====================== M A I N  S I T E  C O N T E N T ====================== -->
+    <main class="residency">
+        <!-- tells search engines this is the main part of the site. -->
+
+        <div class="residency__sidemenu">
+            <div class="residency__years">
+                <a href="#">2015</a>
+                <a href="#">2016</a>
+                <a href="residencias-2018.html">2018</a>
+            </div>
+            <div class="residency__selectedYear">
+                <p>2017</p>
+            </div>
+            <div class="residency__residents">
+                <a href="#">Estrella Payton</a>
+                <a href="#">Olga Gutiérrez</a>
+                <a href="#">Guillermo Guarino</a>
+                <a href="#">Mónica Nepote</a>
+                <a href="#">Eamon Ore-Giron</a>
+                <a href="#">Tania Candiani</a>
+                <a href="#">Christopher Myers</a>
+                <a href="#">Cristian Franco</a>
+                <a href="#">Cía. La Güera</a>
+                <a href="#">Xel-Ha López</a>
+                <a href="#">Javier M. Rodríguez</a>
+
+
+
+
+
+            </div>
+            <div class="residency__filter">
+                <form method="get">
+                    <a href="residencias-local-2017.html"><span>☐</span> Local</a><br><!-- remember to add checked -->
+                    <a href="residencias-foranea-2017.html"><span>☐</span> Foránea</a><br>
+                    <!-- checked symbol example -->
+                    <a href="residencias-2017.html"><span>☒</span> #Cruce</a><br><br>
+                </form>
+            </div>
+        </div>
+        <div>
+            <div class="residency__accordion">
+                <!-- Accordion -->
+
+                <div class="residency__accordion">
+                    <!-- Accordion -->
+                    <div class="residency__accordion__toggle">
+                        <!-- Program title & subtitle -->
+                        <div class="residency__tag">
+                            <p>#CRUCE<br>26 DE JUNIO AL 30 DE JULIO</p>
+                        </div>
+                        <div class="residency__name">
+                            <h2><span>↙</span>ESTRELLA PAYTON</h2>
+                            <p>CAMINAR, PENSAR, CONSTRUIR</p>
+                        </div>
+                    </div> <!-- ./Program title & subtitle -->
+                    <div class="residency__accordion__content">
+                        <!-- Program details -->
+                        <div class="residency__header">
+                            <!-- Header -->
+
+                            <div class="residency__empty"></div>
+
+                            <div class="residency__title">
+                                <h2>
+                                    <span>↳</span>ESTRELLA<br>
+                                    PAYTON
+                                </h2>
+                                <p>
+                                    CAMINAR, PENSAR, CONSTRUIR
+                                </p>
+
+                                <br>
+                                <br>
+                                <br>
+                            </div>
+
+                            <div class="residency__empty"></div> <!-- Empty -->
+
+                        </div> <!-- ./Header -->
+                        <div class="residency__accordion__container">
+                            <div class="residency__button">
+                                <a href="#">Ver cápsula</a>
+                            </div> <!-- Empty -->
+                            <div class="residency__text">
+                                <p>
+                                    Descripción de proyecto
+
+
+                                    <br><br>
+                                    <br><br>
+                                    <strong>Estrella Payton</strong>
+                                    <br><br>
+                                    Estrella Payton es una artista interdisciplinaria que reside en Phoenix, Arizona. Le
+                                    interesan las interacciones entre
+                                    personas en espacios determinados. Su motivación se enfoca en las relaciones de
+                                    poder y el privilegio, las condiciones
+                                    culturales y sistémicas y la inequidad que ha vivido. Realiza instalaciones que
+                                    complican los espacios físicos y guían
+                                    al espectador a la ver otra perspectiva de los espacios institucionales.
+                                    <br><br>
+                                    Su trabajo explora el uso de materiales de construcción, espacios, el movimiento y
+                                    la abstracción, la realización de
+                                    mapas, texto, collage y experiencias centradas en el espacio.
+
+
+
+
+
+                                </p>
+                            </div> <!-- ./information__text -->
+                        </div> <!-- ./residency__accordion__containe -->
+                        <div class="residency__image">
+                            <!-- Image container -->
+                            <div class="w3-content w3-display-container">
+
+                                <img class="mySlides1" src="assets/img/info/proyecto-1.png"> <!-- logo 1 -->
+                                <img class="mySlides1" src="assets/img/info/proyecto-2.png"> <!-- logo 2 -->
+
+                                <button id="button-left-1" class="w3-button w3-black w3-display-left">&#10094;</button>
+                                <button id="button-right-1"
+                                    class="w3-button w3-black w3-display-right">&#10095;</button>
+                            </div>
+                        </div> <!-- ./Image container -->
+                    </div> <!-- ./Program details -->
+
+
+                </div> <!-- ./Accordion -->
+            </div>
+
+
+    </main>
+
+    <!-- JS -->
+    <script type="text/javascript" src="assets/js/residency/accordion.js"></script>
+    <script type="text/javascript" src="assets/js/residency/gallery.js"></script>
+</body>
+
+</html>
