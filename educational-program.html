@@ -110,7 +110,7 @@
                             </h2>
                             <div class="program__buttons">
                                 <a href="#">OBITUARIO</a>
-                                <a href="#">CONTACTO</a>
+                                <a id="myBtn" href="#">CONTACTO</a>
                             </div>
                         </div> 
             
@@ -341,10 +341,117 @@
 
     </div> <!-- information__project -->
 
+    <!-- ====================== C O N T A C T  M O D A L ====================== -->
+  <!-- The Modal -->
+  <div class="modal myModal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <!-- firt row -->
+      <div>
+        <a href="#"><span class="close">&times;</span></a>
+      </div>
+
+      <!-- second row -->
+      <div>
+        <h1 class="contact-title">RECIBE NUESTRO NEWSLETTER</h1>
+        <div class="form">
+            <form id="form__contact" class="form-horizontal" method="post" class="form-horizontal" action="ajaxSubmit.php">
+                <div class="form__group">
+                    <input type="email" class="form-control" placeholder=" correo electrónico" name="email" required>
+                </div>
+
+                <div class="form__group form__send">
+                  <button type="submit" name="submit" class="btn-newsletter">SUSCRIBETE</button>
+                </div>
+                
+            </form>
+          </div><!-- form -->
+
+          <!-- info -->
+          <div class="info-contact">
+            <div class="right-info">
+              <h2>DIRECCIÓN</h2>
+              <P>Lorena Peña Brito<br>
+                <small><a href="mailto:direccion@paosgdl.com">direccion@paosgdl.com</a></small>
+              </P>
+            </div> <!-- .end -->
+            <div class="left-info adress-info">
+              <p>Aurelio Aceves #27<br>
+              Arcos Vallarta<br>
+              Guadalajara, Jalisco<br>
+              México</p>
+            </div><!-- .end -->
+            <div class="right-info">
+              <h2>ADMINISTRACIÓN</h2>
+              <P>Nancy Apellido<br>
+                <small><a href="mailto:paos.admin@paosgdl.com">paos.admin@paosgdl.com</a></small>
+              </P>
+            </div> <!-- .end -->
+            <div class="left-info tel-info">
+                <p><a href="tel:+5213336162398">+52 (33) 3616 2398</a></p>
+              </div><!-- .end -->
+            <div class="right-info">
+              <h2>PATRONATO</h2>
+              <P>Daniela Mercado<br>
+                <small><a href="mailto:paos.patronato@paosgdl.com">paos.patronato@paosgdl.com</a></small>
+              </P>
+            </div> <!-- .end -->
+            <div class="left-info open-info">
+                <p>MARTES A DOMINGO<br>
+                10:00 - 14:00<br>
+                16:00 - 20:00</p>
+              </div><!-- .end -->
+            <div class="right-info">
+              <h2>COMUNICACIÓN<br>Y REDES</h2>
+              <P>Larissa Garza<br>
+                <small><a href="mailto:paos.comunicacion@paosgdl.com">paos.comunicacion@paosgdl.com</a></small>
+              </P>
+            </div> <!-- .end -->
+            <div class="left-info social-info">
+                <p> <a href="#">↳FACEBOOK</a> <br>
+                <a href="#">↳TWITTER</a> <br>
+                <a href="#">↳INSTAGRAM</a> </p>
+              </div><!-- .end -->
+            <div class="right-info service-info">
+              <h2>SERVICIO SOCIAL</h2>
+              <P><small>Fulanito Tal<br>
+                 Otro Fulano <br>
+                 Perengano Apellido
+                </small></P>
+            </div> <!-- .end -->
+            <div class="empty-info"></div> <!-- empty -->
+            <div class="right-info">
+              <h2>PRODUCCIÓN</h2>
+              <P>Gretel Morales<br>
+                <small><a href="mailto:produccion.paos@paosgdl.com">produccion.paos@paosgdl.com</a></small>
+              </P>
+            </div> <!-- .end -->
+            <div class="empty-info"></div> <!-- empty -->
+            <div class="right-info">
+              <h2>CONTABILIDAD</h2>
+              <P>Aqui Nombre<br>
+                <small><a href="mailto:correo@paosgdl.com">correo@paosgdl.com</a></small>
+              </P>
+            </div> <!-- .end -->
+            <div></div>       
+          </div>
+      </div> 
+
+      <!-- third row -->
+      <div>
+  
+      </div>
+    </div>
+
+  </div>
+
+
   </main> 
 
   <!-- JS -->
   <script type="text/javascript" src="assets/js/acordeon.js"></script> 
   <script type="text/javascript" src="assets/js/program/gallery.js"></script>
+  <script type="text/javascript" src="assets/js/main.js"></script>
 </body>
 </html>
