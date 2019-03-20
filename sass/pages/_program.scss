@@ -1,0 +1,263 @@
+.program {
+    &__details {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0 7vw 0 3vw;
+
+       /* Ipad */
+       @include respond(ipad) {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    &__empty {
+       /* Ipad */
+       @include respond(ipad) {
+            display: none;
+        }
+    }
+
+    &__text {
+        margin-bottom: 5rem;
+        p {
+            font-size: 1.8rem;
+            line-height: 2.5rem;
+        }
+    }
+}
+
+.accordion {
+    display: grid;
+    grid-template-rows: 1fr;
+
+    /* Ipad */
+    @include respond(ipad) {
+        width: 100vw;
+        margin-left: -10rem; /* bcs of gallery */
+        margin-right: -10rem; /* bcs of gallery */
+    }
+
+    /* iPhone Plus */
+    @include respond(iphone-plus) {
+        margin-left: -2rem; /* bcs of gallery */
+        margin-right: 0rem; /* bcs of gallery */
+    }
+    
+    &__toggle {
+        cursor: pointer;
+        border-top: 1px solid $color-primary;
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 1rem;
+
+        
+
+        h2 {
+            font-size: 3rem;
+            text-transform: uppercase;
+            font-family: "Liberation-italic";
+            margin-bottom: -1rem;
+            margin-top: 4rem;
+
+            /* Ipad */
+            @include respond(ipad) {
+                margin-right: 4rem;/* bcs of gallery */
+            }
+        }
+
+        p {
+            font-size: 1.5rem;
+        }
+
+        span {
+            color: $color-primary-light;
+            border-bottom: 2.5px solid $color-primary-light;
+
+            /* Ipad */
+            @include respond(ipad) {
+                display: none;
+            }
+        }
+    }
+
+    &__content {
+        display: none;
+        margin-bottom: 3rem;
+        .default {
+            display: block;
+        }
+    }
+
+    &__container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        /* Ipad */
+        @include respond(ipad) {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    &__text {
+        font-size: 1.8rem;
+        line-height: 2.5rem;
+        overflow-y: auto;
+        max-height: 25rem;
+
+        @include respond(ipad) {
+            
+            padding: 2rem;/* bcs of gallery */
+        }
+    }
+
+    &__empty {
+        /* Ipad */
+        @include respond(ipad) {
+            display: none;
+        }
+    }
+}
+
+
+
+.program__buttons {
+    margin-top: 0rem;
+    padding-right: 40rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+
+    /* iphone-plus */
+    @include respond(ipad) {
+        padding-right: 35rem;
+        margin-top: 3rem; 
+    }
+
+    /* iphone-plus */
+    @include respond(iphone-plus) {
+        display: block;
+
+        padding-right: 0rem;
+        margin-top: 3rem; 
+        float: left;
+    }
+
+    a {
+        text-decoration: none;
+        background-color: $color-primary-light;
+        color: $color-white;
+        padding: 1rem 2.5rem 1rem 2.5rem;
+        font-size: 2.5rem;
+
+        /* iphone-plus */
+        @include respond(iphone-plus) {
+            padding: 1rem 1rem 1rem 1rem;
+            font-size: 1.7rem;
+        }
+    }
+
+    a:last-child {
+        margin-left: 8px;
+
+        /* iphone-plus */
+        @include respond(iphone-plus) {
+            margin-left: 4px;
+        }
+    }
+}
+
+strong.title-program {
+    font-size: 20rem;
+
+    @include respond(ipad) {
+        font-size: 18rem;
+    }
+
+    @include respond(iphone-plus) {
+        font-size: 15rem;
+    }
+}
+
+.program__title {
+    span {
+        color: $color-primary;
+        text-decoration: underline;
+        font-size: 3.8rem;
+
+        @include respond(iphone-plus) {
+            font-size: 3rem;
+        }
+    }
+    h2 {
+        font-size: 1rem;
+        line-height: 5rem;
+        /* ipad */
+        @include respond(ipad) {
+            font-size: 4rem;
+            line-height: 5rem;
+        }
+
+        /* iPhone Plus */
+        @include respond(iphone-plus) {
+            font-size: 3.5rem;
+        }
+    }
+
+    p {
+        color: $color-primary-light;
+        font-size: 1.5rem;
+        text-align: justify;
+
+        /* ipad */
+        @include respond(ipad) {
+            font-size: 1.8rem;
+        }
+    }
+}
+
+.link-list-text {
+    background-color: #DC83F5;
+
+}
+
+.program-text {
+    float: right;
+    h2 {
+        font-size: 3rem;
+        text-transform: uppercase;
+        font-family: "Liberation-italic";
+        margin-bottom: -1rem;
+        margin-top: 4rem;
+        text-align: right;
+        padding-right: 2rem;
+
+        /* Ipad */
+        @include respond(ipad) {
+            margin-right: 0rem;/* bcs of gallery */
+        }
+    }
+
+    p {
+        font-size: 1.5rem;
+    }
+
+    a {
+        text-decoration: none;
+        color: inherit;
+
+        /* Ipad */
+        @include respond(ipad) {
+            text-decoration: underline;
+        }
+    }
+
+    span {
+        color: $color-primary-light;
+        border-bottom: 2.5px solid $color-primary-light;
+
+        /* Ipad */
+        @include respond(ipad) {
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,462 @@
+.residency__years { grid-area: residency__years; }
+.residency__selectedYear { grid-area: residency__selectedYear; }
+.residency__filter { grid-area: residency__filter; }
+
+.residency {
+    display: grid;
+    grid-template-columns: 1fr 7fr;
+
+    /* ipad */
+    @include respond(ipad) {
+        grid-template-columns: 1fr;
+        padding: 0;
+        margin: 0;
+    }
+
+    &__sidemenu {
+        border-right: 1px solid $color-primary;
+        min-height: 100vh;
+        padding-left: 0 !important;
+        margin-left: -5rem;
+        padding-right: 4rem;
+
+        a {
+            text-decoration: none;
+        }
+
+        /* ipad */
+        @include respond(ipad) {
+            min-height: auto;
+            position: fixed;
+            width: 100vw;
+            background-color: $color-white;
+            transform: translateY(-4rem);
+            
+            margin-left: -10rem;
+            padding-left: 0;
+            border-bottom: 1px solid $color-primary;
+            display: grid;
+            grid-template-areas:
+                'residency__years residency__years residency__years residency__years residency__years residency__years'
+                'residency__selectedYear residency__selectedYear residency__selectedYear residency__filter residency__filter residency__filter';
+        }
+
+        /* iphone-plus */
+        @include respond(iphone-plus) {
+            margin-left: -1.8rem;
+            grid-template-areas:
+                'residency__years residency__years residency__years residency__years residency__years residency__years'
+                'residency__filter residency__filter residency__filter residency__filter residency__filter residency__filter';
+        }
+    }
+
+    &__years {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        text-align: center;
+        font-size: 1.3rem;
+        margin-top: 5rem;
+        a {
+            color: $color-primary;
+        }
+
+        /* ipad */
+        @include respond(ipad) {
+            background-color: $color-white;
+            width: 100vw;
+            margin-top: -7rem;
+            
+            height: auto;
+            display: flex;
+            justify-content: flex-end;
+            a{
+                margin-top: 2rem;
+                margin-left: 3rem;
+                color: $color-primary-light;
+                font-size: 1.4rem;
+                &:last-child {
+                    padding-right: 5rem;
+                }
+            }
+        }
+
+        /* iphone-plus */
+        @include respond(iphone-plus) {
+            margin-top: 1rem;
+            
+            a {
+                &:last-child {
+                    padding-right: 2rem;
+                }
+            }
+        }
+    }
+
+    &__selectedYear {
+        color: $color-primary;
+        font-size: 5rem;
+        text-align: center;
+
+        /* ipad */
+        @include respond(ipad) {
+            background-color: $color-white;
+            margin-top: -4rem;
+            height: 8rem;
+        }
+
+        /* iphone-plus */
+        @include respond(iphone-plus) {
+            display: none;
+        }
+    }
+
+    &__residents {
+        display: grid;
+        grid-template-columns: 1fr;
+        text-align: center;
+        overflow-x: auto;
+        max-height: 30rem;
+        
+        a {
+            color: $color-primary-light;
+            text-transform: uppercase;
+        }
+
+        /* ipad */
+        @include respond(ipad) {
+            display: none;
+        }
+    }
+
+    &__filter {
+        text-align: right;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        align-self: center;
+        margin-top: 5rem;
+        font-size: 1.8rem;
+        text-transform: uppercase;
+        line-height: 2rem;
+
+        a {
+            color: $color-primary;
+        }
+
+        span {
+            // border: 1px solid $color-primary-light;
+            // padding: 0 5px 0 5px;
+            font-size: 2.2rem;
+            color: $color-primary-light;
+        }
+
+        /* ipad */
+        @include respond(ipad) {
+            background-color: $color-white;
+            margin-top: -2rem;
+            height: 8rem;
+            justify-content: flex-end;
+
+            a {
+                padding-right: 5rem;
+            }
+        }
+
+        /* iphone-plus */
+        @include respond(iphone-plus) {
+            margin-top: 1rem;
+            a {
+                padding-right: 2rem;
+            }
+        }
+    }
+
+    &__tag {
+        float: left;
+        margin-top: 5rem;
+        margin-left: 4rem;
+    }
+    &__name {
+        float: right;
+    }
+    &__details {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0 7vw 0 3vw;
+
+       /* Ipad */
+       @include respond(ipad) {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    &__empty {
+       /* Ipad */
+       @include respond(ipad) {
+            display: none;
+        }
+    }
+
+    &__text {
+        margin-bottom: 5rem;
+        p {
+            font-size: 1.8rem;
+            line-height: 2.5rem;
+        }
+
+         /* ipad */
+         @include respond(ipad) {
+            padding: 0 5rem 0 5rem;
+        }
+    }
+
+
+    &__header {
+        margin-top: 10rem;
+        display: grid;
+        grid-template-columns: 2fr 4fr 2fr;
+
+        /* ipad */
+        @include respond(ipad) {
+            grid-template-columns: 2fr 4fr 2fr;
+            margin-top: 4rem;  
+            margin-left: 5rem;
+        }
+
+        /* iPhone Plus */
+        @include respond(iphone-plus) {
+            grid-template-columns: 1fr 5fr 0.1fr;
+        }
+    }
+    
+    &__title {
+        span {
+            color: $color-primary-light;
+        }
+        h2 {
+            text-decoration: underline;
+            font-size: 3.8rem;
+
+            /* ipad */
+            @include respond(ipad) {
+                font-size: 4rem;
+                line-height: 5rem;
+            }
+
+            /* iPhone Plus */
+            @include respond(iphone-plus) {
+                font-size: 3.5rem;
+            }
+        }
+
+        p {
+            color: $color-primary-light;
+            font-size: 1.5rem;
+            text-align: justify;
+
+            /* ipad */
+            @include respond(ipad) {
+                font-size: 1.8rem;
+            }
+        }
+    }
+
+    &__accordion {
+        display: grid;
+        grid-template-rows: 1fr;
+
+        /* ipad */
+        @include respond(ipad) {
+            margin-top: 5rem;
+            margin-left: -10rem;
+            margin-right: -10rem;
+        }
+
+        /* iphone plus */
+        @include respond(iphone-plus) {
+            margin-top: 10rem;
+            margin-left: -5rem;
+            margin-right: -5rem;
+        }
+        
+        &__toggle {
+            cursor: pointer;
+            border-top: 1px solid $color-primary;
+            //display: flex;
+            //justify-content: flex-end;
+            margin-bottom: 1rem;
+
+            /* ipad */
+            @include respond(ipad) {
+                padding-right: 5rem;
+            }
+
+    
+            h2 {
+                font-size: 3rem;
+                text-transform: uppercase;
+                font-family: "Liberation-italic";
+                margin-bottom: -1rem;
+                margin-top: 4rem;
+
+                /* iphone */
+                @include respond(iphone) {
+                    font-size: 2.5rem;
+                }
+            }
+    
+            p {
+                font-size: 1.5rem;
+            }
+    
+            span {
+                color: $color-primary-light;
+                border-bottom: 2.5px solid $color-primary-light;
+    
+                /* Ipad */
+                @include respond(ipad) {
+                    display: none;
+                }
+            }
+        }
+    
+        &__content {
+            display: none;
+            margin-bottom: 3rem;
+            .default {
+                display: block;
+            }
+        }
+    
+        &__container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+    
+            /* Ipad */
+            @include respond(ipad) {
+                grid-template-columns: 1fr;
+            }
+        }
+    
+        &__text {
+            font-size: 1.8rem;
+            line-height: 2.5rem;
+            overflow-y: auto;
+            max-height: 25rem;
+        }
+    
+        &__empty {
+            /* Ipad */
+            @include respond(ipad) {
+                display: none;
+            }
+        }
+    }
+
+    &__button {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        align-self: flex-start;
+        a {
+            background-color: $color-primary-light;
+            color: $color-white;
+            padding: 1rem 2.5rem 1rem 2.5rem;
+            text-decoration: none;
+            font-size: 1.8rem;
+            text-transform: uppercase;
+        }
+
+        /* ipad */
+        @include respond(ipad) {
+            display: none;
+        }
+    }
+    
+
+    &__image {
+        margin-top: 4rem;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        /* Blue filter */
+        filter: grayscale(1);
+        transition: all 0.8s;
+
+        &:hover {
+            /* Blue filter */
+            filter: grayscale(0);    
+        }
+
+        /* ipad */
+        @include respond(ipad) {
+            max-width: 100vw;
+        }
+
+        img {
+             /* ipad */
+            @include respond(ipad) {
+                max-width: 100vw;
+            }
+
+            /* iphone */
+            @include respond(iphone-plus) {
+                margin-left: 6rem;
+            }
+        }
+
+        .w3-display-left, .w3-display-right {
+            background-color: $color-primary;
+            height: 4.5rem;
+            width: 4.5rem;
+            color: $color-white;
+            border-color: transparent;
+            opacity: 0.8;
+            transition: all 0.2s;
+            font-size: 2rem;
+
+            /* iphone-plus */
+            @include respond(iphone-plus) {
+                height: 4rem;
+                width: 4rem;
+                font-size: 1.8rem;
+            }
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+
+        .w3-display-left {
+            transform: translateY(-650%);
+
+            /* ipad */
+            @include respond(ipad) {
+                transform: translateY(-450%);
+            }
+
+            /* iphone-plus */
+            @include respond(iphone-plus) {
+                transform: translateY(-260%);
+                margin-left: 6rem;
+            }
+        }
+
+        .w3-display-right {
+            transform: translateY(-650%);
+            float: right; 
+
+            /* ipad */
+            @include respond(ipad) {
+                transform: translateY(-450%);
+            }
+
+            /* iphone-plus */
+            @include respond(iphone-plus) {
+                transform: translateY(-260%);
+            }
+        }
+    }
+    
+}

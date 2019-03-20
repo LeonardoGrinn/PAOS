@@ -1,0 +1,260 @@
+.navigation {
+    &__checkbox {
+        display: none;
+      }
+    
+      &__button {
+        background-color: $color-white;
+    
+        height: 6.5rem;
+        width: 6.5rem;
+        position: fixed;
+        top: 1.5rem;
+        right: 3.5rem;
+        border-radius: 100%;
+        border: 1px solid $color-primary;
+        z-index: 2000;
+        text-align: center;
+        cursor: pointer;
+    
+        // iPhone Plus
+        @include respond(iphone-plus) {
+          height: 4.5rem;
+          width: 4.5rem;
+          top: 1.5rem;
+          right: 1.5rem;
+        }
+    
+        // iPhone
+        @include respond(iphone) {
+          height: 4.5rem;
+          width: 4.5rem;
+          top: 1.5rem;
+          right: 1.5rem;
+        }
+    
+      }
+    
+      &__background {
+        height: 4.5rem;
+        width: 4.5rem;
+        position: fixed;
+        top: 2rem;
+        right: 7rem;
+        background: $color-white;
+        z-index: 1000;
+        transition:  transform .8s cubic-bezier(0.86, 0, 0.07, 1); //easings.net personal transition.
+    
+        // iPhone Plus
+        @include respond(iphone-plus) {
+          height: 4rem;
+          width: 4rem;
+          top: 1.8rem;
+          right: 1.8rem;
+        }
+    
+        // iPhone
+        @include respond(iphone) {
+          height: 4rem;
+          width: 4rem;
+          top: 1.8rem;
+          right: 1.8rem;
+        }
+      }
+    
+      &__nav {
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 1500;
+    
+        opacity: 0;
+        width: 0;
+        transition: all .8s cubic-bezier(0.68, -0.55, 0.265, 1.55); //easings.net personal transition.
+      }
+    
+      &__list {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        list-style: none;
+        text-align: center;
+        width: 100%;
+
+        // iPhone Plus
+        @include respond(iphone-plus) {
+          top: 40%;
+        }
+      }
+    
+      &__item {
+        margin: .5rem;
+      }
+    
+      &__link {
+    
+        &:link,
+        &:visited {
+          display: inline-block;
+          font-size: 4rem;
+          letter-spacing: .5rem;
+          font-weight: 300;
+          padding: 1rem 2rem;
+          color: $color-primary;
+          text-decoration: none;
+          text-transform: uppercase;
+          background-size: 220%;
+          transition: all .3s;
+    
+          // Desktop
+          @include respond(desktop) {
+            font-size: 3rem;
+          }
+    
+          // iPhone Plus
+          @include respond(iphone-plus) {
+            font-size: 1.6rem;
+          }
+    
+          span {
+            margin-right: 1rem;
+            display: inline-block;
+          }
+        }
+    
+        &:hover,
+        &:active, &.active {
+          color: $color-primary-light;
+        }
+
+        &__one:hover, &__one.active  {
+            color: $color-white;
+            background-color: $color-primary-light;
+            padding: 0 3rem 0 3rem;
+        }
+
+        &__two:hover, &__two.active  {
+            font-family: Liberation-italic;
+        }
+
+        &__three:hover, &__three.active  {
+            background-color: $color-secondary-light;
+        }
+
+        &__four:hover, &__four.active  {
+            text-decoration:line-through;
+        }
+
+        &__five:hover, &__five.active  {
+            border: 3px solid $color-primary-light;
+            padding: 0 2rem 0 2rem;
+        }
+
+        &__six:hover, &__five.active  {
+            border-bottom: 3px solid $color-primary-light;
+            padding: 0;
+        }
+
+        &__seven:hover, &__seven.active  {
+          color: $color-primary-light;
+        }
+
+        &__seven {
+          position: absolute;
+          right: 2rem;
+          bottom: 1rem;
+          color: $color-primary;
+          font-size: 2rem !important;
+          list-style: none;
+
+          // iPhone Plus
+          @include respond(ipad) {
+            bottom: 6rem;
+          }
+
+          // iPhone Plus
+          @include respond(iphone-plus) {
+            bottom: 15vh;
+            font-size: 1.8rem !important;
+          }
+
+          // iPhone Plus
+          @include respond(iphone-x) {
+            display: none;
+          }
+        }
+      }
+    
+      //FUNCTIONALITY
+      &__checkbox:checked ~ &__background {
+        transform: scale(80);
+    
+        // Full desktop
+        @include respond(full-desktop) {
+          transform: scale(100);
+        }
+    
+        // Macbook Pro 15
+        @include respond(macbook-pro-15) {
+          transform: scale(100);
+        }
+      }
+    
+      &__checkbox:checked ~ &__nav {
+        opacity: 1;
+        width: 100%,
+      }
+    
+      //ICON
+      &__icon {
+        position: relative;
+        margin-top: 3rem;
+    
+        // iPhone Plus
+        @include respond(iphone-plus) {
+          margin-top: 2rem;
+        }
+    
+        // iPhone
+        @include respond(iphone) {
+          margin-top: 2rem;
+        }
+    
+    
+        &,
+        &::before {
+          width: 3rem;
+          height: 2px;
+          background-color: $color-primary;
+          display: inline-block;
+        }
+    
+        &::before, {
+          content: "";
+          position: absolute;
+          left: 0;
+          transition: all .2s;
+        }
+    
+        &::before {
+            transform: rotate(90deg);
+        }
+      }
+
+    
+      &__checkbox:checked + &__button &__icon {//Checkbox hack sibling.
+        background-color: transparent;
+      }
+    
+      &__checkbox:checked + &__button &__icon::before {//Checkbox hack sibling.
+        top: 0;
+        transform: rotate(180deg);
+      }
+    
+      &__checkbox:checked + &__button &__icon::after {//Checkbox hack sibling.
+        top: 0;
+        transform: rotate(-90deg);
+      }
+}
